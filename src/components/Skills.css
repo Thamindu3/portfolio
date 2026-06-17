@@ -1,0 +1,65 @@
+.skills-section { background: var(--bg-surface); }
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.skills-cat {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  transition: border-color var(--transition);
+}
+.skills-cat:hover { border-color: color-mix(in srgb, var(--cat-color) 35%, transparent); }
+
+.skills-cat-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.skills-cat-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--cat-color);
+  flex-shrink: 0;
+  box-shadow: 0 0 8px var(--cat-color);
+}
+
+.skills-cat-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--cat-color);
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skills-tag {
+  font-size: 0.82rem;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  color: var(--text-2);
+  background: color-mix(in srgb, var(--cat-color) 6%, var(--bg));
+  border: 1px solid color-mix(in srgb, var(--cat-color) 18%, transparent);
+  padding: 5px 12px;
+  border-radius: 6px;
+  transition: color var(--transition), background var(--transition), border-color var(--transition);
+}
+.skills-cat:hover .skills-tag {
+  color: color-mix(in srgb, var(--cat-color) 85%, var(--text-1));
+  background: color-mix(in srgb, var(--cat-color) 12%, var(--bg));
+  border-color: color-mix(in srgb, var(--cat-color) 30%, transparent);
+}
+
+@media (max-width: 680px) { .skills-grid { grid-template-columns: 1fr; } }

@@ -1,0 +1,98 @@
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  transition: background 0.3s, border-color 0.3s;
+  border-bottom: 1px solid transparent;
+}
+.navbar.scrolled {
+  background: rgba(8,12,20,0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom-color: var(--border);
+}
+
+.nav-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 28px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  font-size: 1.1rem;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  color: var(--text-1);
+  letter-spacing: -0.3px;
+}
+.nav-logo span { color: var(--accent); }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  list-style: none;
+}
+
+.nav-links button {
+  background: none;
+  border: none;
+  color: var(--text-2);
+  font-size: 0.85rem;
+  font-family: inherit;
+  font-weight: 500;
+  padding: 7px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: color var(--transition), background var(--transition);
+}
+.nav-links button:hover { color: var(--text-1); background: rgba(255,255,255,0.05); }
+
+.nav-cta {
+  margin-left: 10px;
+  padding: 8px 18px !important;
+  font-size: 0.85rem !important;
+}
+
+.nav-burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+}
+.nav-burger span {
+  display: block;
+  width: 22px;
+  height: 1.5px;
+  background: var(--text-2);
+  border-radius: 2px;
+  transition: var(--transition);
+}
+
+@media (max-width: 768px) {
+  .nav-burger { display: flex; }
+  .nav-links {
+    position: fixed;
+    top: 64px; left: 0; right: 0;
+    background: var(--bg-surface);
+    border-bottom: 1px solid var(--border);
+    flex-direction: column;
+    align-items: stretch;
+    padding: 12px 20px 20px;
+    gap: 2px;
+    transform: translateY(-110%);
+    opacity: 0;
+    transition: transform 0.28s ease, opacity 0.28s ease;
+    pointer-events: none;
+  }
+  .nav-links.open { transform: translateY(0); opacity: 1; pointer-events: all; }
+  .nav-links button { text-align: left; padding: 11px 14px; }
+  .nav-cta { margin-left: 0; margin-top: 6px; justify-content: center; }
+}
