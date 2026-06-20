@@ -4,22 +4,45 @@ const categories = [
   {
     label: 'Frontend',
     color: '#4f8ef7',
-    skills: ['React', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'Vite', 'Tailwind CSS'],
+    skills: [
+      'React',
+      'Next.js',
+      'TypeScript',
+      'JavaScript',
+      'HTML5',
+      'CSS3',
+      'Tailwind CSS',
+      'Three.js',
+      'React Three Fiber',
+    ],
   },
   {
     label: 'Backend & APIs',
     color: '#a78bfa',
-    skills: ['Python', 'FastAPI', 'Node.js', 'REST APIs', 'PostgreSQL', 'SQLite'],
+    skills: ['Python', 'FastAPI', 'Node.js', 'REST APIs', 'PostgreSQL', 'SQLite', 'Firebase', 'Firestore'],
   },
   {
     label: 'ML / Data',
     color: '#34d399',
-    skills: ['Machine Learning', 'scikit-learn', 'NumPy', 'Pandas', 'Data Analysis', 'Jupyter'],
+    skills: [
+      'Machine Learning',
+      'scikit-learn',
+      'NumPy',
+      'Pandas',
+      'Apache Spark',
+      'Spark SQL',
+      'Matplotlib',
+    ],
   },
   {
     label: 'Tools & DevOps',
     color: '#fb923c',
-    skills: ['Git', 'GitHub', 'Docker', 'Linux', 'VS Code', 'Figma', 'Postman'],
+    skills: ['Git', 'GitHub', 'Docker', 'Databricks', 'VS Code', 'Figma', 'Postman'],
+  },
+  {
+    label: 'Mobile & Embedded',
+    color: '#f43f5e',
+    skills: ['Flutter', 'Capacitor', 'ESP32', 'Firebase', 'Mobile Development'],
   },
 ]
 

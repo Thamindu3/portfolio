@@ -11,10 +11,10 @@ interface Item {
 
 const items: Item[] = [
   {
-    role: 'Software Engineering Intern',
+    role: 'Software Engineering Workshop (IPTP Networks)',
     org: 'IPTP Networks',
     period: '2024',
-    type: 'work',
+    type: 'activity',
     bullets: [
       'Gained hands-on exposure to enterprise software workflows and deployment pipelines.',
       'Collaborated with the engineering team on internal tooling and API integrations.',
@@ -23,18 +23,18 @@ const items: Item[] = [
     tags: ['Python', 'APIs', 'Agile'],
   },
   {
-    role: 'Event Organiser',
-    org: 'NSBM Tech Events',
-    period: '2023 – Present',
+    role: 'Member',
+    org: 'Music Club of NSBM',
+    period: 'May 2025 – Present',
     type: 'activity',
     bullets: [
-      'Co-organised faculty-level hackathons, tech talks, and student workshops.',
-      'Coordinated logistics, marketing, and on-day operations for 200+ attendee events.',
+      'Participate in club rehearsals and campus performances.',
+      'Collaborate on event productions and sound coordination.',
     ],
-    tags: ['Leadership', 'Event Management'],
+    tags: ['Teamwork', 'Music'],
   },
   {
-    role: 'Member',
+    role: 'Event Organizer',
     org: 'NSBM Chess Club',
     period: '2022 – Present',
     type: 'activity',

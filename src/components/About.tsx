@@ -1,9 +1,12 @@
 import './About.css'
+import { projects } from './Projects'
+
+const projectCount = projects.length
 
 const stats = [
-  { value: '3+', label: 'Projects Built' },
-  { value: '1', label: 'Industry Internship' },
-  { value: '4th', label: 'Year of Study' },
+  { value: `${projectCount}+`, label: 'Projects Built' },
+  { value: '0', label: 'Industry Internship' },
+  { value: '3rd', label: 'Year of Study' },
   { value: '2', label: 'Tech Clubs' },
 ]
 
@@ -16,19 +19,16 @@ export default function About() {
             <span className="section-eyebrow">About Me</span>
             <h2 className="section-title">Turning ideas into<br />working software</h2>
             <p className="about-para">
-              I'm a final-year Computer Science student at NSBM Green University, affiliated with
+              I'm a final year Computer Science student at NSBM Green University, affiliated with
               the University of Plymouth (UK). I'm passionate about building clean, performant
               web applications and exploring the intersection of software engineering and machine
               learning.
             </p>
             <p className="about-para">
-              I completed a Software Engineering internship at <strong>IPTP Networks</strong>,
-              gaining real-world exposure to production systems, Agile workflows, and API
-              integration. Outside of code I co-organise NSBM faculty tech events and compete
-              for the university chess team.
+              I co-organise NSBM faculty tech events and compete for the university chess team.
             </p>
             <p className="about-para">
-              I'm actively looking for graduate roles and internship opportunities where I can
+              I'm actively looking for internship and industry opportunities where I can
               contribute to real products and grow alongside talented engineers.
             </p>
             <div className="about-actions">
@@ -59,7 +59,7 @@ export default function About() {
               </div>
               <div className="about-info-row">
                 <span className="about-info-label">Focus</span>
-                <span className="about-info-val">Full-Stack · ML/AI</span>
+                <span className="about-info-val">Full-Stack · UI/UX Development . AI</span>
               </div>
               <div className="about-info-row">
                 <span className="about-info-label">Location</span>

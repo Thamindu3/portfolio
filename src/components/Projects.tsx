@@ -10,29 +10,61 @@ interface Project {
   accent: string
 }
 
-const projects: Project[] = [
+export const projects: Project[] = [
   {
     title: 'TOP LABLE',
     description:
-      'Final-year campus project — a full-stack platform built with Python on the backend and TypeScript on the frontend. Covers end-to-end product labelling workflows with a clean REST API layer.',
-    tags: ['Python', 'TypeScript', 'FastAPI', 'HTML/CSS'],
-    github: 'https://github.com/Thamindu3/Final-Year-Project--TOPLABLE-',
+      "AI Virtual Try-On & Fashion Recommendation Platform — final-year project shipped as a working product with a React/TypeScript storefront, FastAPI backend, and admin dashboard.",
+    tags: [
+      'React',
+      'TypeScript',
+      'Python',
+      'FastAPI',
+      'VITON-HD',
+      'SQLite',
+      'Computer Vision',
+    ],
+    role: 'Lead Developer / Research',
     accent: '#6366f1',
   },
   {
-    title: 'Game',
+    title: 'Industry-Based Big Data Analytics (Apache Spark)',
     description:
-      'A browser-based game built with vanilla JavaScript, HTML, and CSS, packaged as a native Android app using Capacitor. Playable on both web and mobile from a single codebase.',
-    tags: ['JavaScript', 'HTML', 'CSS', 'Capacitor', 'Android'],
-    github: 'https://github.com/Thamindu3/Game',
+      'Built a Spark-based analytics pipeline on the Olist e-commerce dataset; produced Databricks visualisations and trained a Random Forest model to predict low review outcomes.',
+    tags: ['Apache Spark', 'Python', 'Databricks', 'Spark SQL', 'Random Forest', 'Matplotlib'],
+    role: 'Data Engineer / ML',
+    accent: '#0ea5a4',
+  },
+  {
+    title: 'FurnitureViz',
+    description:
+      '3D room design and furniture visualization using Three.js and React Three Fiber; integrated 100+ models with realistic lighting and responsive UI.',
+    tags: ['Next.js', 'Three.js', 'React Three Fiber', 'TypeScript', 'Firebase', 'Zustand'],
+    role: 'Frontend Engineer',
+    accent: '#f97316',
+  },
+  {
+    title: 'Ceylon WorkForge',
+    description:
+      'Micro job marketplace for Sri Lanka — full-stack platform with admin dashboard, real-time messaging, and payment/reporting workflows.',
+    tags: ['Next.js', 'Node.js', 'Firebase', 'Tailwind CSS', 'TypeScript'],
+    role: 'Full-Stack Developer',
+    accent: '#06b6d4',
+  },
+  {
+    title: 'Vehicle Parts Marketplace (Mobile)',
+    description:
+      'Mobile marketplace app for buying/selling vehicle spare parts with auth, advanced search/filters, categorized listings, and direct seller communication.',
+    tags: ['Flutter', 'Mobile', 'Authentication', 'Search'],
+    role: 'Mobile Developer',
     accent: '#10b981',
   },
   {
     title: 'Flood Sense',
     description:
-      'Contributed to an IoT-powered flood early-warning system that aggregates sensor data and delivers real-time alerts. Worked on the data pipeline and dashboard visualisations.',
-    tags: ['Python', 'IoT', 'Data Processing', 'React'],
-    role: 'Contributor',
+      'IoT-based flood disaster management system: ESP32 sensor network, Firebase streaming, and Flutter mobile app with live updates and push alerts.',
+    tags: ['ESP32', 'IoT', 'Firebase', 'Flutter', 'Realtime'],
+    role: 'Team Member',
     accent: '#f59e0b',
   },
 ]
